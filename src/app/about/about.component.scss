@@ -1,0 +1,39 @@
+@import "./../variables";
+
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+// * {
+//   font-family: "Raleway", sans-serif;
+// }
+/** GENERAL STYLES**/
+h4 a {
+  font-style: normal;
+  font-weight: normal;
+  color: $searchText;
+}
+.cards {
+  p {
+  }
+}
+
+/*** QUESTION RELATED STYLES***/
+
+.people-ask {
+  h5 {
+    font-weight: bolder;
+  }
+  margin-right: 10%;
+}
+/*** QUESTION RELATED STYLES***/
+
+//** CARD RELATED STYLES*/
+.about-detail {
+  padding: 20px 10px;
+}
+.extra-details > div {
+  padding: 5px 10px;
+  span {
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+}
+//** CARD RELATED STYLES*/

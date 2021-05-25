@@ -1,0 +1,42 @@
+<div class="row images-section">
+  <div class="col">
+    <div>
+      <h1>GIFS</h1>
+      <hr />
+      <img
+        *ngFor="let img of gifCounts; let ind = index"
+        [src]="gifPath(ind)"
+        alt="mohans"
+        class="images img-responsive"
+        (click)="onImageClick(ind)"
+      />
+    </div>
+    <div>
+      <h1>VIDEOS</h1>
+      <hr />
+      <video
+        width="500"
+        height="500"
+        controls
+        class="images"
+        *ngFor="let img of videoCount; let ind = index"
+      >
+        <source [src]="videoPath(ind)" type="video/mp4" />
+        <!-- <source src="./../../assets/videos/video (1).mp4" type="video/mp4" /> -->
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <!-- <div class="overlayer" *ngIf="selectedImagePath">
+    <div class="block-background">
+      <div class="close-div">
+        <div (click)="onClose()" class="outer">
+          <div class="inner">
+            <label>Go Back</label>
+          </div>
+        </div>
+      </div>
+      <img [src]="selectedImagePath" alt="selected_image" class="overlay-img" />
+    </div>
+  </div> -->
+</div>

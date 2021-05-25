@@ -1,0 +1,25 @@
+<div class="row images-section">
+  <div>
+    <!-- <span>{{ imagePath(ind) }}</span> -->
+    <img
+      *ngFor="let img of imagesCount; let ind = index"
+      [src]="imagePath(ind)"
+      alt="mohans"
+      class="images img-responsive"
+      (click)="onImageClick(ind)"
+    />
+  </div>
+  <!-- *ngIf="selectedImagePath" -->
+  <div class="overlayer" *ngIf="selectedImagePath">
+    <div class="block-background">
+      <div class="close-div">
+        <div (click)="onClose()" class="outer">
+          <div class="inner">
+            <label>Go Back</label>
+          </div>
+        </div>
+      </div>
+      <img [src]="selectedImagePath" alt="selected_image" class="overlay-img" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "wishes": [{ "description": "Good luck", "author": "Sarathy" }],
+  "questions": [
+    "How many animes you read?",
+    "Does the name Mr.Google suits you?",
+    "Why does Mohan customizes everything ?",
+    "Things you like about cats ?",
+    "What is your maximum works hours in a single day? "
+  ],
+  "about": {
+    "name": "Mohan Kumar Paluru",
+    "alias": "Mr.Google",
+    "text": "lorem sdfsf sdfs "
+  },
+  "details": { "born": "27 Janurary 1998", "height": "1.50m" }
+}
